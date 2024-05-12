@@ -31,5 +31,9 @@ arduinoFFT by Enrique Condes 2.0.0<br>
 Schematics:<br>
 <img src="STM32USBOscillo.png">
 
+Usage:<br>
+Upload the scketch from Arduino IDE with Upload Method: "STM32duino bootloader".<br>
+Open the HTML file "STM32F103scope.html" on the Windows PC and select the communication port.
+
 Description is here, although it is written in Japanese language:<br>
 http://harahore.g2.xrea.com/STM32/STM32USBOscillo.html
