@@ -37,3 +37,7 @@ Open the HTML file "STM32F103scope.html" on the Windows PC and select the commun
 
 Description is here, although it is written in Japanese language:<br>
 http://harahore.g2.xrea.com/STM32/STM32USBOscillo.html
+
+References:<br>
+<a href="https://github.com/jklomp/pico-RP2040-oscilloscope">jklomp / pico-RP2040-oscilloscope</a>
+<a href="https://github.com/siliconvalley4066/STM32F103C8T6OLEDOscilloscope">siliconvalley4066 / STM32F103C8T6OLEDOscilloscope</a>
