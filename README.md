@@ -39,5 +39,5 @@ Description is here, although it is written in Japanese language:<br>
 http://harahore.g2.xrea.com/STM32/STM32USBOscillo.html
 
 References:<br>
-<a href="https://github.com/jklomp/pico-RP2040-oscilloscope">jklomp / pico-RP2040-oscilloscope</a><br>
-<a href="https://github.com/siliconvalley4066/STM32F103C8T6OLEDOscilloscope">siliconvalley4066 / STM32F103C8T6OLEDOscilloscope</a><br>
+jklomp / pico-RP2040-oscilloscope　<a href="https://github.com/jklomp/pico-RP2040-oscilloscope">https://github.com/jklomp/pico-RP2040-oscilloscope</a><br>
+siliconvalley4066 / STM32F103C8T6OLEDOscilloscope　<a href="https://github.com/siliconvalley4066/STM32F103C8T6OLEDOscilloscope">https://github.com/siliconvalley4066/STM32F103C8T6OLEDOscilloscope</a><br>
