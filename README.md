@@ -5,7 +5,6 @@ STM32F103C8T6 USB dual channel oscilloscope with Pulse Generator, DDS Function G
 
 This displays an oscilloscope screen on the WEB page of the PC which is conected to the STM32F103C8T6 board with a USB cable.
 The settings are controled on the WEB page.
-You can view the oscilloscope screen on the WEB browser of the PC or the tablet or the smartphone.
 
 Specifications:
 <li>Dual input channel</li>
