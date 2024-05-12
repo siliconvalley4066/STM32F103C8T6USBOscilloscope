@@ -32,7 +32,7 @@ Schematics:<br>
 
 Usage:<br>
 Upload the scketch from Arduino IDE with Upload Method: "STM32duino bootloader".<br>
-Open the HTML file "STM32F103scope.html" on the Windows PC and select the communication port.
+Open the HTML file "STM32F103scope.html" on the Windows PC and select the communication port at upper left area of the web page.
 
 Description is here, although it is written in Japanese language:<br>
 http://harahore.g2.xrea.com/STM32/STM32USBOscillo.html
