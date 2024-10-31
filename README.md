@@ -36,7 +36,7 @@ Upload the scketch from Arduino IDE with Upload Method: "STM32duino bootloader".
 Open the HTML file "STM32F103scope.html" on the Windows PC and select the communication port at upper left area of the web page.
 
 Description is here, although it is written in Japanese language:<br>
-http://harahore.g2.xrea.com/STM32/STM32USBOscillo.html
+https://ss1.xrea.com/harahore.g2.xrea.com/STM32/STM32USBOscillo.html
 
 References:<br>
 jklomp / pico-RP2040-oscilloscope　<a href="https://github.com/jklomp/pico-RP2040-oscilloscope">https://github.com/jklomp/pico-RP2040-oscilloscope</a><br>
