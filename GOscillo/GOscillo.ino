@@ -1,5 +1,5 @@
 /*
- * STM32F103C8T6 Oscilloscope using USB Serial Version 0.10
+ * STM32F103C8T6 Oscilloscope using USB Serial Version 0.11
  * The max DMA sampling rates is 5.14Msps with single channel, 2.57Msps with 2 channels.
  * The max software loop sampling rates is 100ksps with 2 channels.
  * + Pulse Generator
@@ -40,14 +40,17 @@ const int NSAMP = 2048;
 const int DISPLNG = 512;
 const byte ad_ch0 = PA0;                // Analog pin for channel 0
 const byte ad_ch1 = PA1;                // Analog pin for channel 1
-const long VREF[] = {32, 64, 161, 322, 645}; // reference voltage 3.3V ->  32 :   1V/div range (100mV/dot)
-                                        //                        ->  64 : 0.5V/div
-                                        //                        -> 161 : 0.2V/div
-                                        //                        -> 322 : 100mV/div
-                                        //                        -> 644 :  50mV/div
+const long VREF[] = {60, 66, 165, 330, 660}; // reference voltage 3.3V ->  33 :   1V/div range (100mV/dot)
+                                        //                        ->  66 : 0.5V/div
+                                        //                        -> 165 : 0.2V/div
+                                        //                        -> 330 : 100mV/div
+                                        //                        -> 660 :  50mV/div
+                                        // 3.3V / attn * DOTS_DIV / vdiv
 //const int MILLIVOL_per_dot[] = {100, 50, 20, 10, 5}; // mV/dot
-//const int ac_offset[] PROGMEM = {1792, -128, -1297, -1679, -1860}; // for OLED
-const int ac_offset[] PROGMEM = {3072, 512, -1043, -1552, -1804}; // for Web
+//const int ac_offset[] PROGMEM = {1676, -186, -1303, -1676, -1862};  // 3 div offset
+//                            = 3 * vdiv / 3.3 * 4096 - 2048
+const int ac_offset[] PROGMEM = {2917, 434, -1055, -1552, -1800}; // 4 div offset
+//                            = 4 * vdiv / 3.3 * 4096 - 2048
 const int MODE_ON = 0;
 const int MODE_INV = 1;
 const int MODE_OFF = 2;
@@ -414,10 +417,10 @@ float freqhref() {
 void set_default() {
   range0 = RANGE_MIN;
   ch0_mode = MODE_ON;
-  ch0_off = 2048;
+  ch0_off = 0;
   range1 = RANGE_MIN;
   ch1_mode = MODE_ON;
-  ch1_off = 2048;
+  ch1_off = 0;
   rate = 1;
   trig_mode = TRIG_AUTO;
   trig_lv = 128;
